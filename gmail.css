@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightgrey;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template:
+    "header header header" 50px
+    "folders mail menu" 1fr/
+    1fr 5fr 50px;
+}
+
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+
+.folders {
+  grid-area: folders;
+  background-color: purple;
+}
+
+.mail {
+  grid-area: mail;
+  background-color: pink;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: red;
+}
