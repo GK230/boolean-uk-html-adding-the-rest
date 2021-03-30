@@ -7,17 +7,28 @@
 .container {
   background-color: lightgrey;
   min-height: 100vh;
-  min-width: 100vw;
   display: grid;
   grid-template:
     "servers header header header" 50px
     "servers rooms messages people" 1fr/
     50px 2fr 4fr 2fr;
+  grid-gap: 5px;
 }
 
 .servers {
   grid-area: servers;
   background-color: blue;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  grid-gap: 5px;
+}
+
+.logo {
+  background-color: lightslategrey;
+}
+
+.server-logos {
+  background-color: lightgreen;
 }
 
 .header {

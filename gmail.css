@@ -9,7 +9,6 @@
   padding: 1em;
   background-color: lightgrey;
   min-height: 100vh;
-  min-width: 100vw;
   display: grid;
   grid-template:
     "header header header header" 50px
@@ -72,6 +71,10 @@
 
 .top {
   background-color: rebeccapurple;
+}
+
+.emails {
+  background-color: rosybrown;
 }
 
 .settings {
