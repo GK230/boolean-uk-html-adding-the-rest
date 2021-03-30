@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: black 2px solid;
 }
 
 .container {
-  background-color: lightgrey;
+  padding: 1em;
   min-height: 100vh;
+  background-color: lightgrey;
   display: grid;
   grid-template:
     "header header header" 50px
@@ -20,6 +20,37 @@
 .header {
   grid-area: header;
   background-color: blue;
+  display: grid;
+  grid-template-columns: 50px 200px 3fr 2fr;
+  grid-gap: 10px;
+  place-items: center;
+}
+
+.logo {
+  /* background-color: red; */
+  place-items: center;
+  object-fit: contain;
+}
+
+.search {
+  /* grid-area: search;
+  display: grid; */
+
+  background-color: darkkhaki;
+}
+
+.icons {
+  /* grid-area: icons;
+  display: grid; */
+
+  background-color: darkorange;
+}
+
+.work {
+  /* grid-area: work;
+  display: grid; */
+
+  background-color: darkblue;
 }
 
 .profile {
@@ -85,13 +116,14 @@
 .news {
   grid-area: news;
   background-color: red;
+  overflow: scroll;
 }
 
 .news {
   grid-area: news;
   background-color: pink;
   display: grid;
-  grid-template-rows: 2fr 1fr 200px;
+  grid-template-rows: 2fr 1fr 2fr;
   grid-gap: 10px;
 }
 
