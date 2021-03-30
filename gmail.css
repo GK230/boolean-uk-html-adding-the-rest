@@ -2,35 +2,103 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: black 2px solid;
 }
 
 .container {
+  padding: 1em;
   background-color: lightgrey;
   min-height: 100vh;
   min-width: 100vw;
   display: grid;
   grid-template:
-    "header header header" 50px
-    "folders mail menu" 1fr/
-    1fr 5fr 50px;
+    "header header header header" 50px
+    "folder mail settings menu" 1fr/
+    1fr 5fr 1fr 50px;
+  grid-gap: 5px;
 }
 
 .header {
   grid-area: header;
   background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-gap: 5px;
+}
+
+.logo {
+  background-color: lavender;
+}
+
+.search {
+  background-color: lemonchiffon;
+}
+
+.icons {
+  background-color: lawngreen;
+}
+
+.folder {
+  grid-area: folder;
+  background-color: purple;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 3fr;
+  grid-gap: 5px;
+}
+
+.compose {
+  background-color: darkblue;
 }
 
 .folders {
-  grid-area: folders;
-  background-color: purple;
+  background-color: darkorchid;
+}
+
+.meet {
+  background-color: darkolivegreen;
+}
+
+.chat {
+  background-color: darkgoldenrod;
 }
 
 .mail {
   grid-area: mail;
   background-color: pink;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  grid-gap: 5px;
+}
+
+.top {
+  background-color: rebeccapurple;
+}
+
+.settings {
+  grid-area: settings;
+  background-color: green;
+  display: grid;
+  grid-template-rows: 2fr 4fr 3fr 4fr;
+  grid-gap: 5px;
 }
 
 .menu {
   grid-area: menu;
   background-color: red;
+}
+
+.quick {
+  background-color: beige;
+}
+
+.density {
+  background-color: blueviolet;
+}
+
+.theme {
+  background-color: darkgrey;
+}
+
+.inbox {
+  background-color: darkcyan;
 }
